@@ -78,6 +78,15 @@ body {
     font-weight: bold;
 }
 
+.title-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    color: var(--yellow);
+}
+
 .description {
     color: var(--gray-500);
 }
