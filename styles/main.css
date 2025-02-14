@@ -5,15 +5,90 @@
 
 :root {
     --yellow: hsl(47, 88%, 63%);
-    --white: hsl(0, 0%, 100%);
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--yellow);
     font-family: Figtree, sans-serif;
+    line-height: 150%;
+    color: var(--gray-950);
+    letter-spacing: 0;
+}
+
+.card {
+    box-shadow: 8px 8px 0 0 #000;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    width: 384px;
+    padding: 24px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-950);
+    border-radius: 20px;
+}
+
+.preview {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tags {
+    display: flex;
+}
+
+.tag {
+    padding-inline: 12px;
+    padding-block: 4px;
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tag-yellow {
+    background-color: var(--yellow);
+}
+
+.publishing-date {
+    font-size: 14px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    color: var(--gray-500);
+}
+
+.author-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: bold;
 }
