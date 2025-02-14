@@ -1,6 +1,6 @@
 @font-face {
     font-family: Figtree;
-    src: url(../fonts/Figtree.ttf);
+    src: url(../fonts/Figtree.ttf) format("ttf");
 }
 
 :root {
@@ -33,16 +33,20 @@ body {
     flex-direction: column;
     gap: 24px;
     overflow: hidden;
-    width: 384px;
+    max-width: 384px;
     padding: 24px;
     background-color: var(--white);
     outline: 1px solid var(--gray-950);
     border-radius: 20px;
+    margin-inline: 24px;
 }
 
 .preview {
     overflow: hidden;
     border-radius: 10px;
+    max-width: 336px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .content {
