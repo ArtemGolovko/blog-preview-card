@@ -87,8 +87,9 @@ body {
     text-decoration: none;
 }
 
-.title-link:hover {
+.title-link:hover, .title-link:focus {
     color: var(--yellow);
+    outline: none;
 }
 
 .description {
